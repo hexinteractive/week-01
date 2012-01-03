@@ -64,7 +64,9 @@ describe "Symbols", "not quite a string, not yet a constant" do
         # For this one see what you can do to the symbol stored in the variable
         # artist to make it meet the expectations "george_michael"
         
+        
         artist = :george_michael
+        artist = artist.to_s
         artist.should == "george_michael"
       end
       
